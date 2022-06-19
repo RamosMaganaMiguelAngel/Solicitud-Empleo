@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+</head>
+
+<body>
+    <main>
+        <form action="SolicitudEmpleo" method="post" name="frmSE1" id="frmSE1">
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th style="font-size: 32px; background-color: rgb(184, 184, 184);">Solicitud de Empleo</th>
+                        <td width="200">Fecha<br>
+                            <input type="date" id="dtFecha" name="drFecha" required>
+                        </td>
+
+                        <td rowspan="4" width="300"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" width="800" height="150">
+                            <label for="Puesto">Puesto que solicita:</label><br>
+                            <input type="text" id="txtPuesto" name="txtPuesto" required><br>
+                            <label for="NOTA">Sea tan amable de llenar esta solicitud en forma manuscrita
+                                <br>NOTA: Toda información aquí proporcionada será tratada
+                                confidencialmente</label>
+                        </td>
+                        <td>
+                            Sueldo mensual deseado
+                            <input type="text" id="txtSueldoMensual" name="txtSueldoMensual">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sueldo mensual aprobado
+                            <input type="text" id="txtSueldoMensualA" name="txtSueldoMensualA">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de contratación<br>
+                            <input type="date" id="dtFechaC" name="drFechaC">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="3" style="font-size: 14px; background-color: rgb(184, 184, 184);">Datos Personales
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="830" colspan="2">
+                            <label for="ApellidoP">Apellido Paterno:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="ApellidoM">Apellido Materno:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="Nombres">Nombres(s):</label><br>
+                            <input type="text" id="txtApellidoP" name="txtApellidoP" size="30" required>
+                            <input type="text" id="txtApellidoM" name="txtApellidoM" size="30" required>
+                            <input type="text" id="txtNombre" name="txtNombre" size="35" required>
+                        </td>
+                        <td width="120">
+                            Edad<br>
+                            <input type="text" id="txtEdad" name="txtEdad" size="5"> Años
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="780">
+                            <label for="Domicilio">Domicilio:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="Colonia">Colonia:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;
+                            <label for="CodigoP">Codigo Postal:</label><br>
+                            <input type="text" id="txtDomicilio" name="txtDomicilio" size="30">
+                            <input type="text" id="txtColonia" name="txtColonia" size="30">
+                            <input type="text" id="txtCodigoP" name="txtCodigoP" size="10">
+                        </td>
+                        <td width="150">
+                            Telefono<br>
+                            <input type="text" id="txtTelefono" name="txtTelefono" size="14">
+                        </td>
+                        <td>
+                            Sexo<br>
+                            <input type="radio" id="rdbSexoM" name="rdbSexoM">Masculino<br>
+                            <input type="radio" id="rdbSexoF" name="rdbSexoF">Femenino
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="CiudadE">Ciudad, Estado:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="CiudadE">Lugar de Nacimiento:</label><br>
+                            <input type="text" id="txtCiudadE" name="txtCiudadE" size="40">
+                            <input type="text" id="txtLugarN" name="txtLugarN" size="40">
+                        </td>
+                        <td width="120">
+                            Fecha de Nacimiento<br>
+                            <input type="text" id="txtFechaN" name="txtFechaN" size="14">
+                        </td>
+                        <td width="120">
+                            Nacionalidad<br>
+                            <input type="text" id="txtNacionalidad" name="txtNacionalidad" size="10">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Vive con:<br>
+                            <input type="checkbox" id="cboPadres" name="cboPadres">Sus padres
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboFamilia" name="cboFamilia">Su familia
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboParientes" name="cboParientes">Parientes
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboParientes" name="cboParientes">Solo
+
+                        </td>
+                        <td width="120">
+                            Estatura
+                            <input type="text" id="txtFechaN" name="txtFechaN" size="6">
+                        </td>
+                        <td width="120">
+                            Peso
+                            <input type="text" id="txtNacionalidad" name="txtNacionalidad" size="6">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Personas que dependen de usted:<br>
+                            <input type="checkbox" id="cboHijos" name="cboHijos">Hijos
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            <input type="checkbox" id="cboConyugue" name="cboConyugue">Cony&uacute;gue
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboParientes" name="cboParientes">Padres
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboParientes" name="cboParientes">Otros
+
+                        </td>
+                        <td width="100" colspan="2">
+                            Estado civil &nbsp;&nbsp;&nbsp;
+                            <input type="text" id="txtFechaN" name="txtFechaN" size="15"><br>
+                            <input type="checkbox" id="cboSoltero" name="cboSoltero">Soltero
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboCasado" name="cboCasado">Casado
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" id="cboOtro" name="cboOtro">Otro
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="4" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Documentaci&oacute;n</th>
+                    </tr>
+                    <tr>
+                        <td width="600" colspan="2">
+                            <label for="CURP">Clave &Uacute;nica de Registro de Poblaci&oacute;n</label><br>
+                            <input type="text" id="txtCURP" name="txtCURP" size="60">
+                        </td>
+                        <td width="450" colspan="2">
+                            AFORE<br>
+                            <input type="text" id="txtAFORE" name="txtAFORE" size="50">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="300">
+                            <label for="RFC">Reg. Fed. De Contribuyentes</label><br>
+                            <input type="text" id="txtRFC" name="txtRFC" size="30">
+                        </td>
+                        <td width="300">
+                            <label for="NSS">Numero de Seguridad Social</label><br>
+                            <input type="text" id="txtNSS" name="txtNSS" size="30">
+                        </td>
+                        <td width="300">
+                            <label for="Cartilla">Cartilla de Servicio Militar No.</label><br>
+                            <input type="text" id="txtCartilla" name="txtNSS" size="20">
+                        </td>
+                        <td width="300">
+                            <label for="Pasaporte">Pasaporte No.</label><br>
+                            <input type="text" id="txtPasaporte" name="txtPasaporte" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="300">
+                            <label for="RFC">Tienes licencia de manejo</label><br>
+                            <input type="radio" id="rdbNo" name="rdbNo">No&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="rdbSi" name="rdbSi">S&iacute;
+                        </td>
+                        <td width="300">
+                            <label for="Licencia">Clase y N&uacute;mero de Licencia</label><br>
+                            <input type="text" id="txtLicencia" name="txtLicencia" size="30">
+                        </td>
+                        <td width="300" colspan="2">
+                            Siendo extranjero, que documentos le permiten trabajar en el pa&iacute;s:
+                            <input type="text" id="txtDoc" name="txtDoc" size="35">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="3" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Estado de Salud y H&aacute;bitos Personales</th>
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            <label for="RFC">¿C&oacute;mo considera su estado de salud actual?</label><br>
+                            <input type="radio" id="rdbBueno" name="rdbBueno">Bueno&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="rdbRegular" name="rdbRegular">Regular&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="rdbMalo" name="rdbMalo">Malo&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td width="600" colspan="2">
+                            ¿Padece alguna enfermedad cr&oacute;nica?<br>
+                            <input type="radio" id="rdbNo2" name="rdbNo2">No&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="rdbSi2" name="rdbSi2">S&iacute;
+                            &nbsp;&nbsp;(Explique)&nbsp;<input type="text" id="txtExplique" name="txtExplique" size="30">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            ¿Pr&aacute;ctica Ud. Algún Deporte?<br>
+                            <input type="text" id="txtDeporte" name="txtDeporte" size="50">
+                        </td>
+                        <td>
+                            ¿Permanece a alg&uacute;n Club Social o Deportivo?<br>
+                            <input type="text" id="txtClubDep" name="txtClubDep" size="30">
+                        </td>
+                        <td>
+                            ¿Cu&aacute;l es su pasatiempo favorito?<br>
+                            <input type="text" id="txtPsatiempo" name="txtPasatiempo" size="30">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            ¿C&uacute;al es su meta en la vida?<br>
+                            <input type="text" id="txtMeta" name="txtMeta" size="130">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="5" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Datos Familiares</th>
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            Nombre
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            Vive
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            Fin
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            Domicilio
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            Ocupaci&oacute;n
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            Padre<br>
+                            <input type="text" id="txtPadre" name="txtPadre" size="40">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbVivo" name="rdbVivo">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbFin" name="rdbFin">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDom" name="txtDom" size="35">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtOcu" name="txtOcu" size="35">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            Madre<br>
+                            <input type="text" id="txtMadre" name="txtMadre" size="40">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbVivo2" name="rdbVivo2">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbFin2" name="rdbFin2">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDom2" name="txtDom2" size="35">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtOcu2" name="txtOcu2" size="35">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            Esposa (o)<br>
+                            <input type="text" id="txtEsposa" name="txtEsposa" size="40">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbVivo3" name="rdbVivo3">
+                        </td>
+                        <td width="30" style="text-align: center;">
+                            <input type="radio" id="rdbFin3" name="rdbFin3">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDom3" name="txtDom3" size="35">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtOcu2" name="txtOcu2" size="35">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">
+                            Nombres y Edades de los hijos:<br>
+                            <input type="text" id="txtNomEdHijos" name="txtNomEdHijos" size="130">
+                        </td>
+                    </tr>   
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="6" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Escolaridad</th>
+                    </tr>
+                    <tr>
+                        <td width="400">
+                            Nombre
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            Dirección 
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            De
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            A
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            Años
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            Titulo Recibido
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="400">
+                            Primaria <br>
+                            <input type="text" id="txtPrimaria" name="txtPrimaria" size="40">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDirecPri" name="txtDirecPri" size="40">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtDe1" name="txtDe1" size="2"> 
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtA1" name="txtA1" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtYears1" name="txtYears1" size="2">
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            <input type="text" id="txtTitu1" name="txtTitu1" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="400">
+                            Secundaria o Prevocacional<br>
+                            <input type="text" id="txtSecu" name="txtSecu" size="40">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDirecSecu" name="txtDirecSecu" size="40">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtDe2" name="txtDe2" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtA2" name="txtA2" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtYears2" name="txtYears2" size="2">
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            <input type="text" id="txtTitu2" name="txtTitu2" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="400">
+                            Preparatoria o Vocacional<br>
+                            <input type="text" id="txtPrepa" name="txtPrepa" size="40">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDirecPre" name="txtDirecPre" size="40">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtDe3" name="txtDe3" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtA3" name="txtA3" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtYears3" name="txtYears3" size="2">
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            <input type="text" id="txtTitu3" name="txtTitu3" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="400">
+                            Profesional<br>
+                            <input type="text" id="txtProfesional" name="txtProfesional" size="40">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDirecPro" name="txtDirecPro" size="40">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtDe4" name="txtDe4" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtA4" name="txtA4" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtYears4" name="txtYears4" size="2">
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            <input type="text" id="txtTitu4" name="txtTitu4" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="400">
+                            Comercial u Otras<br>
+                            <input type="text" id="txtComercial" name="txtComercial" size="40">
+                        </td>
+                        <td width="400" style="text-align: center;">
+                            <input type="text" id="txtDirecComer" name="txtDirecComer" size="40"> 
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtDe5" name="txtDe5" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtA5" name="txtA5" size="2">
+                        </td>
+                        <td width="50" style="text-align: center;">
+                            <input type="text" id="txtYears5" name="txtYears5" size="2">
+                        </td>
+                        <td width="150" style="text-align: center;">
+                            <input type="text" id="txtTitu5" name="txtTitu5" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6">
+                            Estudios que esta efectuando en la actualidad:<br>
+                            Escuela<input type="text" id="txtNomEdHijos" name="txtNomEdHijos" size="25">
+                            &nbsp;&nbsp;Horario<input type="text" id="txtHorario" name="txtHorario" size="25">
+                            &nbsp;&nbsp;Curso o Carrea<input type="text" id="txtCursoCa" name="txtCursoCa" size="20">
+                            &nbsp;&nbsp;Grado<input type="text" id="txtGrad" name="txtGrad" size="10">
+                        </td>
+                    </tr>
+                    
+                    
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="2" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Conocimientos Generales</th>
+                    </tr>
+                    <tr>
+                        <td width="500">
+                            Que idiomas habla (Nivel 50%, 75%, 100%)<br>
+                            <input type="text" id="txtIdiomas" name="txtIdiomas" size="50">
+                        </td>
+                        <td width="500">
+                            Funciones de oficina que domina<br>
+                            <input type="text" id="txtFOficina" name="txtFOficina" size="50">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            Maquina de Oficina o taller que sepa manejar<br>
+                            <input type="text" id="txtMaquina" name="txtMaquina" size="50">
+                        </td>
+                        <td width="500">
+                            Software que conoce<br>
+                            <input type="text" id="txtSoftware" name="txtSoftware" size="50">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">
+                            Otros trabajos o funciones que domina<br>
+                            <input type="text" id="txtTrabajosF" name="txtTrabajosF" size="130">
+                        </td>
+                    </tr> 
+                    
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="5" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Empleo Actual y Anteriores</th>
+                    </tr>
+                    <tr>
+                        <td width="200">
+                            Concepto
+                        </td>
+                        <td width="200">
+                            Actual o ultimo
+                        </td>
+                        <td width="200">
+                            Anterior
+                        </td>
+                        <td width="200">
+                            Anterior
+                        </td>
+                        <td width="200">
+                            Anterior
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Tiempo que pago sus servicios
+                        </td>
+                        <td width="200">
+                            de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            a<br>
+                            <input type="text" id="txtDee" name="txtDee" size="5">
+                            <input type="text" id="txtAA" name="txtAA" size="5">
+                        </td>
+                        <td width="200">
+                            de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            a<br>
+                            <input type="text" id="txtDee2" name="txtDee2" size="5">
+                            <input type="text" id="txtAA2" name="txtAA2" size="5">
+                        </td>
+                        <td width="200">
+                            de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            a<br>
+                            <input type="text" id="txtDee3" name="txtDee3" size="5">
+                            <input type="text" id="txtAA3" name="txtAA3" size="5">
+                        </td>
+                        <td width="200">
+                            de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            a<br>
+                            <input type="text" id="txtDee4" name="txtDee4" size="5">
+                            <input type="text" id="txtAA4" name="txtAA4" size="5">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Nombre de la compañia
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct1" name="txtAct1" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt1" name="txtAnt1" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt1" name="txtAAnt1" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt1" name="txtAAAnt1" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Direcci&oacute;n
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct2" name="txtAct2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt2" name="txtAnt2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt2" name="txtAAnt2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt2" name="txtAAAnt2" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Tel&eacute;fono
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct3" name="txtAct3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt3" name="txtAnt3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt3" name="txtAAnt3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt3" name="txtAAAnt3" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Puesto desempeñado
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct4" name="txtAct4" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt4" name="txtAnt4" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt4" name="txtAAnt4" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt4" name="txtAAAnt4" size="20">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="200">
+                            Sueldo Mensual
+                        </td>
+                        <td width="200">
+                            Inicial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Final<br>
+                            <input type="text" id="txtInicial" name="txtInicial" size="8">
+                            <input type="text" id="txtFinal" name="txtFinal" size="8">
+                        </td>
+                        <td width="200">
+                            <br>
+                            <input type="text" id="txtInicial2" name="txtInicial2" size="8">
+                            <input type="text" id="txtFinal2" name="txtFinal2" size="8">
+                        </td>
+                        <td width="200">
+                            <br>
+                            <input type="text" id="txtInicial3" name="txtInicial3" size="8">
+                            <input type="text" id="txtFinal3" name="txtFinal3" size="8">
+                        </td>
+                        <td width="200">
+                            <br>
+                            <input type="text" id="txtInicial4" name="txtInicial4" size="8">
+                            <input type="text" id="txtFinal4" name="txtFinal4" size="8">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Motivo de separacion 
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct5" name="txtAct5" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt5" name="txtAnt5" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt5" name="txtAAnt5" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt5" name="txtAAAnt5" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Nombre de su jefe directo
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct6" name="txtAct6" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt6" name="txtAnt6" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt6" name="txtAAnt6" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt6" name="txtAAAnt6" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Puesto de jefe directo
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAct7" name="txtAct7" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAnt7" name="txtAnt7" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAnt7" name="txtAAnt7" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtAAAnt7" name="txtAAAnt7" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            Podemos solicitar informes de usted<br>
+                            <input type="radio" id="rdbSi2" name="rdbSi2">S&iacute;<br>
+                            <input type="radio" id="rdbNo2" name="rdbNo2">No (Razones)
+                        </td>
+                        <td colspan="4">
+                            Comentarios de sus jefes: <br>
+                            <input type="text" id="txtComJ" name="txtComJ" size="80">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th colspan="5" style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Referencias Personales (Favor de no incluir a jefes anteriores)</th>
+                    </tr>
+                    <tr>
+                        <td width="200">
+                            Nombre
+                        </td>
+                        <td width="200">
+                            Domicilio
+                        </td>
+                        <td width="200">
+                            Telefono
+                        </td>
+                        <td width="200">
+                            Ocupacion
+                        </td>
+                        <td width="200">
+                            Tiempo de conocerlo
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            <input type="text" id="txtNomm" name="txtNomm" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtDomm" name="txtDomm" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTell" name="txtTell" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtOcuu" name="txtOcuu" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTiemp" name="txtTiemp" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            <input type="text" id="txtNomm2" name="txtNomm2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtDomm2" name="txtDomm2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTell2" name="txtTell2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtOcuu2" name="txtOcuu2" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTiemp2" name="txtTiemp2" size="20">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="200">
+                            <input type="text" id="txtNomm3" name="txtNomm3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtDomm3" name="txtDomm3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTell3" name="txtTell3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtOcuu3" name="txtOcuu3" size="20">
+                        </td>
+                        <td width="200">
+                            <input type="text" id="txtTiemp3" name="txtTiemp3" size="20">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Datos Generales</th>
+                        <th style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Datos Econ&oacute;micos</th>
+                    </tr>
+                    <tr>
+                        <td width="500">
+                            ¿Como supo de este empleo?<br>
+                            <input type="checkbox" id="cboAnuncio" name="cboAnuncio">Anuncio
+                            <input type="checkbox" id="cboOtroMedio" name="cboOtroMedio">Otro Medio
+                            <input type="text" id="txtMedio" name="txtMedio" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Tiene usted otros ingresos?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Importe mensual<br>
+                            <input type="radio" id="rdbNoo" name="rdbNoo">No
+                            <input type="radio" id="rdbSii" name="rdbSii">S&iacute; (describalos)
+                            <input type="text" id="txtDesc" name="txtDesc" size="20">
+                            $<input type="text" id="txtImporte" name="txtImporte" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="500">
+                            ¿Tiene parientes trabajando en esta Empresa?<br>
+                            <input type="radio" id="rdbNoo" name="rdbNoo">No
+                            <input type="radio" id="rdbSii" name="rdbSii">S&iacute; (nombrelos)
+                            <input type="text" id="txtNombrelos" name="txtNombrelos" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Su conyuge trabaja?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Percepcion mensual<br>
+                            <input type="radio" id="rdbNoo2" name="rdbNoo2">No
+                            <input type="radio" id="rdbSii2" name="rdbSii2">S&iacute; (donde)
+                            <input type="text" id="txtDesc2" name="txtDesc2" size="20">
+                            $<input type="text" id="txtImporte2" name="txtImporte2" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            ¿Ha estado afianzado?<br>
+                            <input type="radio" id="rdbNoo3" name="rdbNoo3">No
+                            <input type="radio" id="rdbSii3" name="rdbSii3">S&iacute; (nombre de la Cía.)
+                            <input type="text" id="txtNombrelos3" name="txtNombrelos3" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Vive en casa propia?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Valor aproximado<br>
+                            <input type="radio" id="rdbNoo4" name="rdbNoo4">No
+                            <input type="radio" id="rdbSii4" name="rdbSii4">S&iacute;
+                            <input type="text" id="txtDesc3" name="txtDesc3" size="20">
+                            $<input type="text" id="txtImporte3" name="txtImporte3" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            ¿Ha estado afiliado a algún sindicato?<br>
+                            <input type="radio" id="rdbNoo4" name="rdbNoo4">No
+                            <input type="radio" id="rdbSii4" name="rdbSii4">S&iacute; ¿a cual?
+                            <input type="text" id="txtNombrelos4" name="txtNombrelos4" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Paga renta?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Renta Mensual<br>
+                            <input type="radio" id="rdbNoo4" name="rdbNoo4">No
+                            <input type="radio" id="rdbSii4" name="rdbSii4">S&iacute;
+                            <input type="text" id="txtDesc4" name="txtDesc4" size="20">
+                            $<input type="text" id="txtImporte4" name="txtImporte4" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            ¿Tiene seguro de vida?<br>
+                            <input type="radio" id="rdbNoo5" name="rdbNoo5">No
+                            <input type="radio" id="rdbSii5" name="rdbSii5">S&iacute; (nombre de la Cía.)
+                            <input type="text" id="txtNombrelos5" name="txtNombrelos5" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Tiene automóvil propio?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            Marca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Modelo
+                            <br>
+                            <input type="radio" id="rdbNoo6" name="rdbNoo6">No
+                            <input type="radio" id="rdbSii6" name="rdbSii6">S&iacute;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="txtDesc6" name="txtDesc6" size="15">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="txtImporte6" name="txtImporte6" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            ¿Puede viajar?<br>
+                            <input type="radio" id="rdbSii7" name="rdbSii7">S&iacute; 
+                            <input type="radio" id="rdbNoo7" name="rdbNoo7">No (razones)
+                            <input type="text" id="txtNombrelos5" name="txtNombrelos5" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Tiene deudas?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Importe
+                            <br>
+                            <input type="radio" id="rdbNoo8" name="rdbNoo8">No
+                            <input type="radio" id="rdbSii8" name="rdbSii8">S&iacute; (¿con quien?)
+                            <input type="text" id="txtDesc8" name="txtDesc8" size="15">
+                            $<input type="text" id="txtImporte8" name="txtImporte8" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            ¿Esta dispuesto a cambia de lugar de residencia?<br>
+                            <input type="radio" id="rdbSii9" name="rdbSii9">S&iacute; 
+                            <input type="radio" id="rdbNoo9" name="rdbNoo9">No (razones)
+                            <input type="text" id="txtNombrelos9" name="txtNombrelos9" size="20">
+                        </td>
+                        <td width="500">
+                            ¿Cuanto abona mensualmente?
+                            <br>
+                            $<input type="text" id="txtImporte9" name="txtImporte9" size="60">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="500">
+                            Fecha en que podría presentarse a trabajar<br>
+                            <input type="text" id="txtNombrelos10" name="txtNombrelos10" size="60">
+                        </td>
+                        <td width="500">
+                            ¿A cuánto ascienden sus gastos mensuales?
+                            <br>
+                            $<input type="text" id="txtImporte10" name="txtImporte10" size="60">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset style="width: 1000px;">
+                <table border="1">
+                    <tr>
+                        <th style="font-size: 14px; background-color: rgb(184, 184, 184);">
+                            Comentarios del entrevistador</th>
+                        <td rowspan="3" width="500">
+                            Hago constar que mis respuestas son verdaderas<br><br><br><br><br>
+                            <hr width="300">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Firma del solicitante
+                        </td>
+                            <hr>
+                    </tr>
+                    <tr>
+                        <td width="500" height="60">
+                            <input type="text" id="txtBlanco" name="txtBlanco" size="65">
+                    </tr>
+                    <tr>
+                        <td width="500" height="60">
+                            <input type="text" id="txtBlanco" name="txtBlanco" size="65">
+                    </tr>
+                    
+                </table>
+            </fieldset>
+            <input type="submit" id="btnEnviar" name="btnEnviar">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar">
+        </form>
+    </main>
+</body>
+
+</html>
